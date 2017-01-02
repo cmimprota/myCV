@@ -20,6 +20,7 @@
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
+\definecolor{black}{HTML}{000000}
 
 %\definecolor{green}{HTML}{C2E15F}
 %\definecolor{orange}{HTML}{FDA333}
@@ -83,7 +84,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
@@ -134,14 +135,12 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{
-  #1&\parbox[t]{11.8cm}{
+  #1&\parbox[t]{15cm}{
     \textbf{#2}
     \hfill
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=black} #3}\\%
     #4\vspace{\parsep}%
   }\\}
-
-
 
 %%%%%%%%%%%%%%
 % Side block %
@@ -155,7 +154,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4}(0.75, 3.9)
+  \begin{textblock}{3.8}(0.55, 3.2)
   \begin{flushright}
   \obeycr
 }{%
@@ -169,5 +168,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=1.6cm,right=1.5cm,bottom=0.1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=0.9cm,right=1.5cm,bottom=0.1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
