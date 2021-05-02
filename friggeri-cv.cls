@@ -13,13 +13,13 @@
 % Colors %
 %%%%%%%%%%
 
-\RequirePackage{xcolor}
+\RequirePackage{xcolor, eso-pic}
 
 \definecolor{white}{RGB}{255,255,255}
 
-\definecolor{darkgray}{HTML}{333333}
+\definecolor{darkgray}{HTML}{2B2B2B}
 \definecolor{gray}{HTML}{4D4D4D}
-\definecolor{lightgray}{HTML}{999999}
+\definecolor{lightgray}{HTML}{F9F9F9}
 \definecolor{black}{HTML}{000000}
 
 %\definecolor{green}{HTML}{C2E15F}
@@ -42,6 +42,13 @@
 \fi
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
+
+\AddToShipoutPictureBG{
+% SIDE-STRIPE:
+  \AtPageLowerLeft{%
+    \color{lightgray}%
+    \rule{5.45cm}{\dimexpr\pdfpageheight}%
+  }}
 
 %%%%%%%%%
 % Fonts %
@@ -84,17 +91,17 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2.8cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
-      \fontsize{14pt}{24pt}\color{header}%
+      \fontsize{13pt}{23pt}\color{header}%
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{2.25cm}
   \vspace{-2\parskip}
 }
 
@@ -114,7 +121,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
+  \par\vspace{.25\parskip}%
   {%
   \large\headingfont\color{headercolor} #1%
   }
@@ -135,8 +142,9 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{
+
   #1&\parbox[t]{15cm}{
-    \textbf{#2}
+    \textbf{#2} 
     \hfill
     {\footnotesize\addfontfeature{Color=black} #3}\\%
     #4\vspace{\parsep}%
@@ -153,8 +161,10 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \let\oldsection\section
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+    
   }
-  \begin{textblock}{3.8}(0.55, 3.2)
+  \color{lightgray}
+  \begin{textblock}{3.8}(0.55, 2.9)
   \begin{flushright}
   \obeycr
 }{%
@@ -163,6 +173,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \end{textblock}
   \let\section\oldsection
 }
+
+\newcommand{\extraspace}[1]{\addvspace{1ex}#1}
 
 %%%%%%%%%%%%%%%%
 % Other tweaks %

@@ -2,6 +2,8 @@
 \documentclass[]{friggeri-cv}
 \usepackage{soul}
 \usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{mdframed}
 
 \newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
 
@@ -11,9 +13,9 @@
 \setlist{nolistsep}
 
 \header{Costanza Maria }{Improta}
-       {UK's Top 10 Computer Science Undergraduate of 2018 by TARGETjobs and FDM}
+       {Research Assistant, Master's in Computer Science at ETH Zürich | Master's Thesis at Disney Research}
        
-       
+
 \begin{aside}
   \section{\myul[red]{Contacts}}
     \bigskip
@@ -25,17 +27,21 @@
   \section{\myul[red]{Programming Competencies}}
     \bigskip
     \textbf{\emph{High Competence:}}
-    Java
     Python
-    HTML5 \& CSS3
+    C++
+    Java
+    Tensorflow
+    PyTorch
+    PyTorch3d
+    LaTeX
+    
     \bigskip
     \textbf{\emph{Medium Competence:}}
-    PHP \& MySQL
-    JavaScript \& JQuery
-    SQL
     C
     OpenGL
-    LaTeX
+    HTML5 \& CSS3
+    JavaScript \& JQuery
+    SQL
     MatLab
     SoapUI
     Django
@@ -44,10 +50,7 @@
     \textbf{\emph{Beginner:}}
     ARM assembly
     Verilog
-    Scala
-    C++
     Swift
-    Ruby
     Drools
     ~
   \section{\myul[red]{OS}}
@@ -57,11 +60,9 @@
     Windows
     Android
     ~  
-  \section{\myul[red]{Tools}}
+  \section{\myul[red]{Certificates}}
     \bigskip
-    Azure Machine Learning
-    Google Colaboratory
-    AWS
+    Google Project Management: Professional Certificate
     ~
   \section{\myul[red]{MOOCs}}
     \bigskip
@@ -75,34 +76,27 @@
 \begin{entrylist}
     \entry
     {}
-    {\emph{\href{https://inf.ethz.ch/studies/master/master-cs.html}{ETH Zürich}}}
+    {\large\emph{\href{https://inf.ethz.ch/studies/master/master-cs.html}{ETH Zürich}}}
     {\textbf{09/2019 - present}}
-    {\emph{MSc in Computer Science - Visual Computing track}}
+    {\large\emph{MSc in Computer Science - Visual Computing track}}
+    {Achieved a 6 (100\%) in \emph{Deep Learning for Computer Vision}, \emph{Data Science in Techno-Socio-Economic Systems} and \emph{Shape Modeling and Geometry Processing}}
     \begin{itemize}
-        \item Strong interest in Data Analysis and Visualization, NLP, Computer Vision, Image Processing and UX/UI.
+        \item Strong interest in Data Analysis and Visualization, ML, Computer Vision and Image Processing, NLP and UX/UI.
+        \item \emph{PandeML} - built and compared different ML models to correctly predict the COVID-19 pandemic in various countries.
+        \item \emph{CSR: Character-level Sequence Representation for Classification of Tweets with Misspellings} - developed a character-level sequence representation  model for sentiment classification of user-generated social media posts.
     \end{itemize}
-
+\medskip
   \entry
     {}
-    {\emph{\href{http://www.manchester.ac.uk/}{The University of Manchester}}}
+    {\large\emph{\href{http://www.manchester.ac.uk/}{The University of Manchester}}}
     {\textbf{09/2015 - 06/2019}}
-    {\emph{BSc in Computer Science with Industrial Experience} - First Class Degree}
+    {\large\emph{BSc in Computer Science with Industrial Experience} - First Class Degree}
     {Certificate of Excellence, awarded to top 10\% of graduating students}
     \begin{itemize}
-        \item Third Year Project - "A Dense Captioning Approach to generate a Descriptive \\Paragraph of an Image"
+        \item Third Year Project - ``A Dense Captioning Approach to generate a Descriptive \\Paragraph of an Image"
         \item \emph{Eventlite} - developed in a team a MVC web application for event management, using the Spring framework, Google and Twitter APIs.
-        \item \emph{\href{https://stendhalgame.org/}{StendhalGame.org}} - as part of a team of 6 students over 12 weeks, tested, debugged, built, developed and deployed a multi-user, multi-threaded, client-server open source game containing over 6000 Java classes and 1800 test cases using Eclipse, Git, Apache Ant, Jenkins and JUnit.
-        \item \emph{ShelfShare} - implemented in a team a platform on which UoM students may securely trade their goods. Mainly worked on the front-end (HTML5, CSS3, Bootstrap) and coordinated my team tracking our progress on GitLab, Trello and Slack.
-    \end{itemize}
-  \entry
-    {}
-    {\href{http://www.stgeorge.school.it/}{St. George's British International School of Rome}}
-    {\textbf{01/2014 - 06/2015}}
-    {\emph{International Baccalaureate}}
-    {IB points: 39  (Top 10 \% of worldwide students taking IB in 2015)}
-    \begin{itemize}
-        \item Higher: Maths, Physics, English; Standard: Computer Science, Economics, Italian.
-        \item Extended Essay (A) on Cryptography.
+        \item \emph{\href{https://stendhalgame.org/}{StendhalGame.org}} - as part of a team, tested, debugged, built, developed and deployed a multi-user, multi-threaded, client-server open source game containing 6000+ Java classes and 1800+ test cases using Eclipse, Git, Apache Ant, Jenkins and JUnit.
+        \item \emph{ShelfShare} - implemented in a team a platform on which UoM students may securely trade their goods.
     \end{itemize}
 \end{entrylist}
 
@@ -110,92 +104,102 @@
 \begin{entrylist}
   \entry
     {}
-    {Programming Research Assistant}
-    {\textbf{09/2020 - present}}
-    {\emph{{ETH Zürich}, Zürich, Switzerland}}
-    \begin{itemize}[topsep=0pt]
-        \item Support researchers in coding experiments.
+    {\large{Master's Thesis in Industry (Research)}}
+    {\textbf{04/2021 - present}}
+    {\large\emph{{Disney Research Studios}, Zürich, Switzerland}}
+    \vspace{-4mm}
+    \begin{itemize}
+        \item Developing a state-of-the-art neural rendering pipeline, to improve rendering quality of coarse image-based 3D reconstructions.
     \end{itemize}
-    
 \end{entrylist}
+\smallskip
 \begin{entrylist}
   \entry
     {}
-    {Software Engineer}
+    {\large{Programming Research Assistant}}
+    {\textbf{09/2020 - present}}
+    {\large\emph{{ETH Zürich}, Zürich, Switzerland}}
+    \vspace{-4mm}
+    \begin{itemize}
+        \item Supporting researchers in coding experiments, data analysis and research.
+    \end{itemize}
+\end{entrylist}
+\smallskip
+\begin{entrylist}
+  \entry
+    {}
+    {\large{Software Engineer}}
     {\textbf{06/2019 - 07/2019}}
-    {\emph{{The University of Manchester}, Manchester, United Kingdom}}
-    \begin{itemize}[topsep=0pt]
+    {\large\emph{{The University of Manchester}, Manchester, United Kingdom}}
+    \vspace{-4mm}
+    \begin{itemize}
         \item Built a data-heavy, web-based application, including restricting access to certain views.
-        \item Understood client requirements and interacted with the existing code base (Python).
         \item Identified missing features and access limitations.
         \item Designed and developed UI.
     \end{itemize}
-    
 \end{entrylist}
+\smallskip
 \begin{entrylist}
   \entry
     {}
-    {Software Engineer}
+    {\large{Software Engineer}}
     {\textbf{07/2017 - 07/2018}}
-    {\emph{\href{https://www.isa-software.com}{ISA Software}, Paris, France}}
+    {\large\emph{\href{https://www.isa-software.com}{ISA Software}, Paris, France}}
     ISA Software is an Air Traffic Management Consultancy Company.
     \begin{itemize}[topsep=0pt]
         \item Researched and evaluated ML models to reliably predict air traffic collisions.
         \item Developed and shipped an interactive simulation tool to display and analyse air traffic.
         \item Developed an automated track analysis and anomaly detection tool.
     \end{itemize}
-    
 \end{entrylist}
+\smallskip
 \begin{entrylist}
   \entry
     {}
-    {Web Developer, Business Analyst, Italian Interpreter}
+    {\large{Web Developer, Business Analyst, Italian Interpreter}}
     {\textbf{07/2016 - 08/2016}}
-    {\emph{\href{http://www.wyng43.com/}{Wyng43}}, Hong Kong, HK}.
+    {\large\emph{\href{http://www.wyng43.com/}{Wyng43}}, Hong Kong, HK}.
+    \vspace{-4mm}
     \begin{itemize}
-        \item Designed and developed from scratch \href{http://www.wyng43.com/}{Wyng43}'s website.
-        \item In a team, devised a functioning business model for a self-sustained HKU Challenge.
-        \item In a team, proposed and implemented a model to reduce electricity consumption in their office by 30\%.
+        \item Designed and developed website for \href{http://www.wyng43.com/}{Wyng43}.
     \end{itemize}
 \end{entrylist}
 \clearpage
 \newpage
 
 \header{Costanza Maria }{Improta}
-       {UK's Top 10 CS Undergraduate of 2018}
+       {UK's Top 10 Computer Science Undergraduate of 2018 by TARGETjobs and FDM}
        
 \begin{aside}
   
   \bigskip
   \section{\myul[red]{Qualifications}}
-  \bigskip
   \extraspace{Google Summer of Code 2020}
   \extraspace{Google Developer Challenge Scholarship}
-  \extraspace{Women Techmaker}
   \bigskip
-  \textbf{LANGUAGES}
+  \textbf{LANGUAGES}\smallskip
   \textbf{Italian:}
-  Native speaker
+  Native speaker\smallskip
   \textbf{English:}
+  Bilingual IB Diploma
   IELTS
   CAE
   \textbf{French:}
-  DELF B1\\
+  DELF B1\smallskip
   \textbf{German:}
-  A2\\
+  A2\smallskip
   \textbf{Chinese:}
-  A1\\
-  \bigskip
+  A1\bigskip
   \textbf{COMPUTER SCIENCE}
+  UK's Top 10 CS Undergraduate of 2018\smallskip
   IBM UTC Prize
-  UK's Top 10 CS Undergraduate of 2018
   \bigskip
   \textbf{MATHEMATICS}
-  "Best in Year" \& "Silver" \\ in \href{https://www.ukmt.org.uk/}{UKTM} (2013)
-  "Best in School" \\ in Giochi Matematici 2012
+  ``Best in Year" \& ``Silver" \\ in \href{https://www.ukmt.org.uk/}{UKTM} (2013)\smallskip
+  ``Best in School" \\ in Giochi Matematici 2012
   \bigskip
   \textbf{OTHERS}
-  Computer Science, Italian and English \\ "Best in Year" awards \\ at SGBIS in 2015
+  Computer Science, Italian and English \\ ``Best in Year" awards \\ at SGBIS in 2015
   ~
   
   \section{\myul[red]{Hackathons}}
@@ -219,8 +223,10 @@
     {\textbf{09/2020 - present}}
     {\emph{Akademischer Motorsportverein Zürich - ETH Zürich Formula Student Project}}
     \begin{itemize}
-        \item Operations - researching sponsorships, approaching clients, managing social media accounts, maintaning website.
-        \item Simulation and Data Analysis - designing a developing a rosbridge for our interactive visualization platform.
+        \item Marketing \& PR responsible, focusing on sponsorships and networking opportunities.
+        \item Managing all social media accounts, and devising an effective social media strategy.
+        \item Developing and maintaining both the \href{https://driverless.amzracing.ch/en/home}{AMZ driverless} and \href{https://electric.amzracing.ch/en/home}{AMZ electric} websites.
+        \item Organising the AMZ 2021 roll-out to present our newly built cars for the current season. Mainly focusing on marketing \& PR, indoor show and media generation.
     \end{itemize}
 \entry
     {}
@@ -240,14 +246,6 @@
     \begin{itemize}
         \item Organised activities and talks to inspire young students to pursue a career in a scientific subject and to narrow down the gender gap by engaging girls too.
         \item Worked both in a team and on my own, which gave me the chance to improve my organisational, communication and oratorical skills.\\
-    \end{itemize}
-\entry
-    {}
-    {\href{https://www.hacksoc.com}{HackSoc Event Organizer}}
-    {\textbf{09/2018 - 06/2019}}
-    {\emph{HackSoc at The University of Manchester School of Computer Science}}
-    \begin{itemize}
-        \item Organised events aiming to bring students and tech industry closer together.\\
     \end{itemize}
    \entry
     {}
